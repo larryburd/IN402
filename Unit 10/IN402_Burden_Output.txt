@@ -1,0 +1,65 @@
+Unit 10 Assignment / Module 6 Part 3 Competency Assessment Output
+
+01/21/2024 12:57:28 
+
+Shape of Dataset: 
+(10000, 14)
+
+Variance of CreditScore is 9341.860156575658 
+Variance of Age is 109.99408416841685 
+Variance of Tenure is 8.364672627262726 
+Variance of Balance is 3893436175.990742 
+Variance of EstimatedSalary is 3307456784.134512 
+
+X_train Length: 8000
+X_test Length: 2000
+
+LR Prediction Accuracy: 
+0.811
+
+LR Confusion Matrix: 
+[[1526   69]
+ [ 309   96]]
+
+LR Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.83      0.96      0.89      1595
+           1       0.58      0.24      0.34       405
+
+    accuracy                           0.81      2000
+   macro avg       0.71      0.60      0.61      2000
+weighted avg       0.78      0.81      0.78      2000
+
+
+Predict with SVM Model:
+
+accuracy:  0.7975
+precision:  0.0
+recall 0.0
+
+SVM Classification Report: 
+              precision    recall  f1-score   support
+
+           0       0.80      1.00      0.89      1595
+           1       0.00      0.00      0.00       405
+
+    accuracy                           0.80      2000
+   macro avg       0.40      0.50      0.44      2000
+weighted avg       0.64      0.80      0.71      2000
+
+
+RF Evaluate Model: 
+              precision    recall  f1-score   support
+
+           0       0.89      0.95      0.92      1595
+           1       0.73      0.51      0.60       405
+
+    accuracy                           0.86      2000
+   macro avg       0.81      0.73      0.76      2000
+weighted avg       0.85      0.86      0.85      2000
+
+
+Accuracy Score: 
+0.864
+

@@ -1,0 +1,29 @@
+Unit 8 Assignment / Module 5 Part 2 Competency Assessment Output
+
+01/07/2024 13:42:42 
+
+Welcome to the CBC MILP Solver 
+Version: 2.10.3 
+Build Date: Dec 15 2019 
+
+command line - C:\Users\laure\OneDrive\Documents\Purdue\IN402\venv\Lib\site-packages\pulp\solverdir\cbc\win\64\cbc.exe C:\Users\laure\AppData\Local\Temp\486978177a7c40ac8b9c6dee231eab85-pulp.mps timeMode elapsed branch printingOptions all solution C:\Users\laure\AppData\Local\Temp\486978177a7c40ac8b9c6dee231eab85-pulp.sol (default strategy 1)
+At line 2 NAME          MODEL
+At line 3 ROWS
+At line 15 COLUMNS
+At line 48 RHS
+At line 59 BOUNDS
+At line 60 ENDATA
+Problem MODEL has 10 rows, 6 columns and 26 elements
+Coin0008I MODEL read with 0 errors
+Option for timeMode changed from cpu to elapsed
+Presolve 10 (0) rows, 6 (0) columns and 26 (0) elements
+0  Obj 0 Primal inf 65.5 (3)
+6  Obj 140.955
+Optimal - objective value 140.955
+Optimal objective 140.955 - 6 iterations time 0.002
+Option for printingOptions changed from normal to all
+Total time (CPU seconds):       0.01   (Wallclock seconds):       0.01
+
+Model Status =  Optimal
+The weight of sugar in regular cookies is 6.25 lbs
+The total cost is $140.96 for 350 low-fat cookies and 500 regular cookies

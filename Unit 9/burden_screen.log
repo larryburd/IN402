@@ -1,0 +1,484 @@
+Script started on 2024-01-15 14:12:56-0500
+]0;codio@tigerpeople-henrypablo: ~/workspacecodio@tigerpeople-henrypablo:~/workspace$ start-hbase.sh
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hadoop/share/hadoop/common/lib/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hbase/lib/client-facing-thirdparty/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+running master, logging to /opt/hbase/logs/hbase-codio-master-tigerpeople-henrypablo.out
+]0;codio@tigerpeople-henrypablo: ~/workspacecodio@tigerpeople-henrypablo:~/workspace$ hbase shell
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/opt/hadoop/share/hadoop/common/lib/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hbase/lib/client-facing-thirdparty/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+HBase Shell
+Use "help" to get list of supported commands.
+Use "exit" to quit this interactive shell.
+For Reference, please visit: http://hbase.apache.org/2.0/book.html#shell
+Version 2.4.8, rf844d09157d9dce6c54fcd53975b7a45865ee9ac, Wed Oct 27 08:48:57 PDT 2021
+Took 0.0020 seconds                                                                     
+hbase:001:0> creaete[K[K[K[K[Keate 'ecom', 'customers', 'orders', 'order_details', 'proc[Kducts'
+Created table ecom
+Took 1.3188 seconds                                                                     
+=> Hbase::Table - ecom
+hbase:002:0> put 'ecom', 'row1', 'customers:customerid', '1'
+Took 0.1843 seconds                                                                     
+hbase:003:0> put 'ecom', 'row1', customers:firstname', 'Michea[K[Kael'
+hbase:004:0' 
+hbase:005:0' '
+[1mTraceback[m (most recent call last):
+[1mSyntaxError ([4m(hbase):3: syntax error, unexpected tSTRING_BEG[0;1m)[m
+[1mput 'ecom', 'row1', customers:firstname', 'Michael'[m
+[1m                                       ^[m
+hbase:006:0> put 'ecom', 'row1', customers:first[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K 'custoemer[K[K[K[Kmers:firstname', '[K[K[K[K[K[K[K[K[Ktname', 'Michael'
+Took 0.0072 seconds                                                                     
+hbase:007:0> 962824[K[K[K[K[K[K962824[K[K[K[K[K[Kput 'ecom', 'row1', 'customers:lastname', 'Jordan'
+Took 0.0082 seconds                                                                     
+hbase:008:0> put 'row1[K[K[K[Keecom[K[K[K[Kcom', 'row1', 'customers:address', '1901 West Madison Street'
+Took 0.0042 seconds                                                                     
+hbase:009:0> put 'com[K[K[Kecom', 'row1', 'customers:city', 'Chicago'
+Took 0.0049 seconds                                                                     
+hbase:010:0> put 'ecom', 'row1', 'customers:state', 'IL"[K'
+Took 0.0039 seconds                                                                     
+hbase:011:0> '[Kput 'ecom', 'row1', c[K'customers:zip', '60612'
+Took 0.0047 seconds                                                                     
+hbase:012:0> put 'ecom', 'row1' [K,'[K 'customers:coutnry[K[K[K[Kntry', 'USA'
+Took 0.0099 seconds                                                                     
+hbase:013:0> put 'ecom', 'row1', 'come[K[K[Kyu[K[Kusteroms[K[K[K[K[K[Ktomers:email', 'mjordand[K@bulls.com'
+Took 0.0058 seconds                                                                     
+hbase:014:0> put 'ecom', 'row1', 'customers:phone', '312-455-4000'
+Took 0.0050 seconds                                                                     
+hbase:015:0> put 'ecom', 'row1', 'customers:orderid', 'abc123'
+Took 0.0051 seconds                                                                     
+hbase:016:0> put 'ecom', 'row1', 'customers:customerid', '1'
+Took 0.0042 seconds                                                                     
+hbase:017:0> put 'ecom', 'row1', 'co[Kuste[Komers:orderdate', '2019-04-14'
+Took 0.0056 seconds                                                                     
+hbase:018:0> put 'ecom', 'row1', 'customers:upc_productid', '1234567890'
+Took 0.0043 seconds                                                                     
+hbase:019:0> put 'ecom', 'row1', 'customers:productname', 'Chicago Bulls red tshirt'
+Took 0.0046 seconds                                                                     
+hbase:020:0> put 'ecom', 'row1', 'customers:productdescription', 'red t-shirt [K, size XL'
+Took 0.0050 seconds                                                                     
+hbase:021:0> pur[Kt 'ecom', 'row1', 'customers:unitprice', '$29.99'
+Took 0.0052 seconds                                                                     
+hbase:022:0> put 'ecom', 'row1', 'orders:quantity', '4'
+Took 0.0040 seconds                                                                     
+hbase:023:0> put 'ecom', 'row1', 'ro[K[Korders:discount', '$4'
+Took 0.0049 seconds                                                                     
+hbase:024:0> put 'ecom', 'row1', 'orders:completed', 'Y'
+Took 0.0040 seconds                                                                     
+hbase:025:0> put 'ecom', 'row2', 'customers:customerid';[K, '2'
+Took 0.0053 seconds                                                                     
+hbase:026:0> put 'ecom', 'row2', 'customers:firstname', 'Bart'
+Took 0.0085 seconds                                                                     
+hbase:027:0> put 'ecom', 'row2', 'customers:'lastname', 'Simpson'
+hbase:028:0' put 'ecom', [K[K[K[K[K[K[K[K[K[K[K[K'
+[1mTraceback[m (most recent call last):
+[1mSyntaxError ([4m(hbase):27: syntax error, unexpected tIDENTIFIER[0;1m)[m
+[1mput 'ecom', 'row2', 'customers:'lastname', 'Simpson'[m
+[1m                                       ^[m
+hbase:029:0> '[Kput 'ecom', 'row2', 'customers:'lastname', 'Simpson'[C[C[C[Clastname', 'Simpson'[K[20D[20C
+Took 0.0057 seconds                                                                     
+hbase:030:0> put 'ecom', 'row2', 'customers:lastname', 'Simpson'', 'Simpson'[K[12D', 'Simpson'[K[12D', 'Simpson'[K[12D', 'Simpson'[K[12D', 'Simpson'[K[12D', 'Simpson'[K[12D', 'Simpson'[K[12D', 'Simpson'[K[12Da', 'Simpson'[12Dd', 'Simpson'[12Dd', 'Simpson'[12Dr', 'Simpson'[12De', 'Simpson'[12Ds', 'Simpson'[12Ds', 'Simpson'[12D[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K'[K1' 'E'v'e'r'g'r'e'e'n' 'S't'r'e'e't'[C
+Took 0.0044 seconds                                                                     
+hbase:031:0> put 'ecom', 'row2', 'customers:address', '1 Evergreen Street'', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23Dc', '1 Evergreen Street'[23Di', '1 Evergreen Street'[23Dt', '1 Evergreen Street'[23Dy', '1 Evergreen Street'[23D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[KS'p'r'i'n'g'f'i'e'l'd'[C
+Took 0.0045 seconds                                                                     
+hbase:032:0> put 'ecom', 'row2', 'customers:city', 'Springfield''[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[KO'R'', 'OR'[K[7D', 'OR'[K[7D', 'OR'[K[7D', 'OR'[K[7Ds', 'OR'[7Dt', 'OR'[7Da', 'OR'[7Dt', 'OR'[7De', 'OR'[7D[7C
+Took 0.0043 seconds                                                                     
+hbase:033:0> put 'ecom', 'row2', 'customers:state', 'OR''[K'[K'[K''9'7'4'0'3'', '97403'[K[10D', '97403'[K[10D', '97403'[K[10D', '97403'[K[10D', '97403'[K[10Dz', '97403'[10Di', '97403'[10Dp', '97403'[10D[10C
+Took 0.0041 seconds                                                                     
+hbase:034:0> put 'ecom', 'row2', 'customers:zip', '97403''[K'[K'[K'[K'[KU'S'A'', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8Dc', 'USA'[8Do', 'USA'[8Du', 'USA'[8Dn', 'USA'[8Dt', 'USA'[8Dr', 'USA'[8Dy', 'USA'[8D[8C
+Took 0.0041 seconds                                                                     
+hbase:035:0> put 'ecom', 'row2', 'customers:country', 'USA''[K'[K'[Kb'a'r't'_'s'i'm'p's'o'n'@'y'a'n''[Kh'o'o'.'c'o'm'[64D'[K[Kput 'ecom', 'row2', 'customers:country', 'USA'', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8De', 'USA'[8Dm', 'USA'[8Da', 'USA'[8Di', 'USA'[8Dl', 'USA'[8D[C[C[C[CSA'[K[3DA'[K[2D'[Kb'a'r't'_'s'i'm'p'a''[Ks'o'n'@'y'a'h'o'o'.'c'o'm'[C
+Took 0.0048 seconds                                                                     
+hbase:036:0> put 'ecom', 'row2', 'customers:email', 'bart_simpson@yahoo.com'[32D[Kcountry', 'USA'', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8Dp', 'USA'[8Dh', 'USA'[8Do', 'USA'[8Dn', 'USA'[8De', 'USA'[8D[C[C[C[C[C[C[C'[K'[K'[K5'4'1'-'7'8'9'-'6'5'3'2'[C
+Took 0.0044 seconds                                                                     
+hbase:037:0> put 'ecom', 'row2', 'customers:phone', '541-789-6532'[C[C', 'customers:phone', '541-789-6532'[K[36D3', 'customers:phone', '541-789-6532'[36D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C', '541-789-6532'[K[17D', '541-789-6532'[K[17D', '541-789-6532'[K[17D', '541-789-6532'[K[17D', '541-789-6532'[K[17Dc', '541-789-6532'[17Du', '541-789-6532'[17Ds', '541-789-6532'[17Dt', '541-789-6532'[17Do', '541-789-6532'[17Dm', '541-789-6532'[17De', '541-789-6532'[17Dr', '541-789-6532'[17Di', '541-789-6532'[17Dd', '541-789-6532'[17D[C[C[C[C41-789-6532'[K[12D1-789-6532'[K[11D-789-6532'[K[10D789-6532'[K[9D89-6532'[K[8D9-6532'[K[7D-6532'[K[6D6532'[K[5D532'[K[4D32'[K[3D2'[K[2D'[K3'[C
+Took 0.0046 seconds                                                                     
+hbase:038:0> put 'ecom', 'row3', 'customers:customerid', '3'', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6Df', '3'[6Di', '3'[6Dr', '3'[6Ds', '3'[6Dt', '3'[6Dn', '3'[6Da', '3'[6Dm', '3'[6De', '3'[6D[C[C[C[C[C'[KS'a'r'a'h'[C
+Took 0.0038 seconds                                                                     
+hbase:039:0> put 'ecom', 'row3', 'customers:firstname', 'Sarah'name', 'Sarah'[K[14Dname', 'Sarah'[K[14Dname', 'Sarah'[K[14Dname', 'Sarah'[K[14Dname', 'Sarah'[K[14Dlname', 'Sarah'[14Daname', 'Sarah'[14Dsname', 'Sarah'[14Dtname', 'Sarah'[14D[C[C[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[KC'o'n'n'e'r''[K'[Ko'r'[C
+Took 0.0040 seconds                                                                     
+hbase:040:0> put 'ecom', 'row3', 'customers:lastname', 'Connor'', 'Connor'[K[11D', 'Connor'[K[11D', 'Connor'[K[11D', 'Connor'[K[11D', 'Connor'[K[11D', 'Connor'[K[11D', 'Connor'[K[11D', 'Connor'[K[11Da', 'Connor'[11Dd', 'Connor'[11Dd', 'Connor'[11Dr', 'Connor'[11De', 'Connor'[11Ds', 'Connor'[11Ds', 'Connor'[11D[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K3'0'9' 'C'a'l'd'e'r'a' 'C'a'n'y'o'n'[C
+Took 0.0046 seconds                                                                     
+hbase:041:0> put 'ecom', 'row3', 'customers:address', '309 Caldera Canyon'', '309 Caldera Canyon'[K[23D', '309 Caldera Canyon'[K[23D', '309 Caldera Canyon'[K[23D', '309 Caldera Canyon'[K[23D', '309 Caldera Canyon'[K[23D', '309 Caldera Canyon'[K[23D', '309 Caldera Canyon'[K[23Da', '309 Caldera Canyon'[23Dp', '309 Caldera Canyon'[23Dt', '309 Caldera Canyon'[23D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[KA'p't' '2'2'5'[C
+Took 0.0042 seconds                                                                     
+hbase:042:0> put 'ecom', 'row3', 'customers:apt', 'Apt 225'', 'Apt 225'[K[12D', 'Apt 225'[K[12D', 'Apt 225'[K[12Dc', 'Apt 225'[12Di', 'Apt 225'[12Dt', 'Apt 225'[12Dy', 'Apt 225'[12D[C[C[C[Cpt 225'[K[7Dt 225'[K[6D 225'[K[5D225'[K[4D25'[K[3D5'[K[2D'[KL'o's' 'A'n'g'e'l'e's'[C
+Took 0.0098 seconds                                                                     
+hbase:043:0> put 'ecom', 'row3', 'customers:city', 'Los Angeles'', 'Los Angeles'[K[16D', 'Los Angeles'[K[16D', 'Los Angeles'[K[16D', 'Los Angeles'[K[16Ds', 'Los Angeles'[16Dt', 'Los Angeles'[16Da', 'Los Angeles'[16Dt', 'Los Angeles'[16De', 'Los Angeles'[16D[C[C[C[Cos Angeles'[K[11Ds Angeles'[K[10D Angeles'[K[9DAngeles'[K[8Dngeles'[K[7Dgeles'[K[6Deles'[K[5Dles'[K[4Des'[K[3Ds'[K[2D'[KC'A'[C
+Took 0.0047 seconds                                                                     
+hbase:044:0> put 'ecom', 'row3', 'customers:state', 'CA'', 'CA'[K[7D', 'CA'[K[7D', 'CA'[K[7D', 'CA'[K[7D', 'CA'[K[7Dz', 'CA'[7Di', 'CA'[7Dp', 'CA'[7D[C[C[C[CA'[K[2D'[K9'0'0'0'7'[C
+Took 0.0038 seconds                                                                     
+hbase:045:0> put 'ecom', 'row3', 'customers:zip', '90007'[C', '90007'[K[10D', '90007'[K[10D', '90007'[K[10Dc', '90007'[10Do', '90007'[10Du', '90007'[10Dn', '90007'[10Dt', '90007'[10Dr', '90007'[10Dy', '90007'[10D[C[C[C[C0007'[K[5D007'[K[4D07'[K[3D7'[K[2D'[KU'S'A'[C
+Took 0.0038 seconds                                                                     
+hbase:046:0> put 'ecom', 'row3', 'customers:country', 'USA'', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8De', 'USA'[8Dm', 'USA'[8Da', 'USA'[8Di', 'USA'[8Dl', 'USA'[8D[C[C[C[CSA'[K[3DA'[K[2D'[Ks'c'o'n'n'o'r'@'h'o't'm'a'i'l'.'c'o'm'[C
+Took 0.0049 seconds                                                                     
+hbase:047:0> put 'ecom', 'row3', 'customers:email', 'sconnor@hotmail.com'', 'sconnor@hotmail.com'[K[24D', 'sconnor@hotmail.com'[K[24D', 'sconnor@hotmail.com'[K[24D', 'sconnor@hotmail.com'[K[24D', 'sconnor@hotmail.com'[K[24Dp', 'sconnor@hotmail.com'[24Dh', 'sconnor@hotmail.com'[24Do', 'sconnor@hotmail.com'[24Dn', 'sconnor@hotmail.com'[24De', 'sconnor@hotmail.com'[24D[C[C[C[Cconnor@hotmail.com'[K[19Donnor@hotmail.com'[K[18Dnnor@hotmail.com'[K[17Dnor@hotmail.com'[K[16Dor@hotmail.com'[K[15Dr@hotmail.com'[K[14D@hotmail.com'[K[13Dhotmail.com'[K[12Dotmail.com'[K[11Dtmail.com'[K[10Dmail.com'[K[9Dail.com'[K[8Dil.com'[K[7Dl.com'[K[6D.com'[K[5Dcom'[K[4Dom'[K[3Dm'[K[2D'[K2'1'3'-'6'7'8'-'4'4'3'1'[C
+Took 0.0047 seconds                                                                     
+hbase:048:0> put 'ecom', 'row3', 'customers:phone', '213-678-4431'[C', 'customers:phone', '213-678-4431'[K[36D4', 'customers:phone', '213-678-4431'[36D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C', '213-678-4431'[K[17D', '213-678-4431'[K[17D', '213-678-4431'[K[17D', '213-678-4431'[K[17D', '213-678-4431'[K[17Dc', '213-678-4431'[17Du', '213-678-4431'[17Ds', '213-678-4431'[17Dt', '213-678-4431'[17Do', '213-678-4431'[17Dm', '213-678-4431'[17De', '213-678-4431'[17Dr', '213-678-4431'[17Di', '213-678-4431'[17Dd', '213-678-4431'[17D[C[C[C[C13-678-4431'[K[12D3-678-4431'[K[11D-678-4431'[K[10D678-4431'[K[9D78-4431'[K[8D8-4431'[K[7D-4431'[K[6D4431'[K[5D431'[K[4D31'[K[3D1'[K[2D'[K4'[C
+Took 0.0077 seconds                                                                     
+hbase:049:0> put 'ecom', 'row4', 'customers:customerid', '4'[31D[K3', 'customers:phone', '213-678-4431'[22D[Kemail', 'sconnor@hotmail.com'[29D[Kcountry', 'USA'[15D[Kzip', '90007'[13D[Kstate', 'CA'[12D[Kcity', 'Los Angeles'[20D[Kapt', 'Apt 225'[14D[Kddress', '309 Caldera Canyon'[30D[Klastname', 'Connor'[19D[Kfirstname', 'Sarah''[K'[K'[K'[K'[KF'r'e'd'[C
+Took 0.0038 seconds                                                                     
+hbase:050:0> put 'ecom', 'row3', 'customers:firstname', 'Fred'[33D[K4', 'customers:customerid', '4'[31D[K3', 'customers:phone', '213-678-4431'[22D[Kemail', 'sconnor@hotmail.com'[29D[Kcountry', 'USA'[15D[Kzip', '90007'[13D[Kstate', 'CA'[12D[Kcity', 'Los Angeles'[20D[Kapt', 'Apt 225'[14D[Kddress', '309 Caldera Canyon'[30D[Klastname', 'Connor''[K'[K'[K'[K'[K'[KK'r'u'e'g'e'r'[C
+Took 0.0041 seconds                                                                     
+hbase:051:0> put 'ecom', 'row3', 'customers:lastname', 'Krueger'[20D[Kfirstname', 'Fred'[33D[K4', 'customers:customerid', '4'[31D[K3', 'customers:phone', '213-678-4431'[22D[Kemail', 'sconnor@hotmail.com'[29D[Kcountry', 'USA'[15D[Kzip', '90007'[13D[Kstate', 'CA'[12D[Kcity', 'Los Angeles'[20D[Kapt', 'Apt 225'[14D[Kddress', '309 Caldera Canyon''[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K1'4'2'8' 'E'l'm' 'S't'r'e'e't'[C
+Took 0.0048 seconds                                                                     
+hbase:052:0> put 'ecom', 'row3', 'customers:address', '1428 Elm Street'[27D[Klastname', 'Krueger'[20D[Kfirstname', 'Fred'[33D[K4', 'customers:customerid', '4'[31D[K3', 'customers:phone', '213-678-4431'[22D[Kemail', 'sconnor@hotmail.com'[29D[Kcountry', 'USA'[15D[Kzip', '90007'[13D[Kstate', 'CA'[12D[Kcity', 'Los Angeles''[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[KL'o's' 'A'n'g'e'l'e's'[C
+Took 0.0041 seconds                                                                     
+hbase:053:0> put 'ecom', 'row3', 'customers:city', 'Los Angeles'[20D[Kaddress', '1428 Elm Street'[27D[Klastname', 'Krueger'[20D[Kfirstname', 'Fred'[33D[K4', 'customers:customerid', '4'[31D[K3', 'customers:phone', '213-678-4431'[22D[Kemail', 'sconnor@hotmail.com'[29D[Kcountry', 'USA'[15D[Kzip', '90007'[13D[Kstate', 'CA'[12D[Kcity', 'Los Angeles'[20D[Kapt', 'Apt 225'[14D[Kddress', '309 Caldera Canyon'[30D[Klastname', 'Connor'[19D[Kfirstname', 'Sarah'[19D[Kcustomerid', '3'[16D[Kfirstname', 'Sarah'[19D[Klastname', 'Connor'[19D[Kaddress', '309 Caldera Canyon'[30D[Klastname', 'Connor'[19D[Kfirstname', 'Sarah'
+Took 0.0065 seconds                                                                     
+hbase:054:0> put 'ecom', 'row3', 'customers:firstname', 'Sarah'[19D[Kcity', 'Los Angeles'[20D[Kaddress', '1428 Elm Street'[27D[Klastname', 'Krueger'[20D[Kfirstname', 'Fred'[33D[K4', 'customers:customerid', '4'[31D[K3', 'customers:phone', '213-678-4431'[22D[Kemail', 'sconnor@hotmail.com'[29D[Kcountry', 'USA'[15D[Kzip', '90007'[13D[Kstate', 'CA'[12D[Kcity', 'Los Angeles'[20D[Kapt', 'Apt 225'[14D[Kddress', '309 Caldera Canyon'[30D[Klastname', 'Connor'[19D[Kfirstname', 'Sarah'[19D[Kcustomerid', '3'[16D[Kfirstname', 'Sarah'[19D[Klastname', 'Connor'
+Took 0.0039 seconds                                                                     
+hbase:055:0> put 'ecom', 'row3', 'customers:lastname', 'Connor'[19D[Kfirstname', 'Sarah'[19D[Kcity', 'Los Angeles'[20D[Kaddress', '1428 Elm Street'[27D[Klastname', 'Krueger'[20D[Kfirstname', 'Fred'[33D[K4', 'customers:customerid', '4'[31D[K3', 'customers:phone', '213-678-4431'[22D[Kemail', 'sconnor@hotmail.com'[29D[Kcountry', 'USA'[15D[Kzip', '90007'[13D[Kstate', 'CA'[12D[Kcity', 'Los Angeles'[20D[Kapt', 'Apt 225'[14D[Kddress', '309 Caldera Canyon'
+Took 0.0045 seconds                                                                     
+hbase:056:0> put 'ecom', 'row3', 'customers:address', '309 Caldera Canyon'[30D[Klastname', 'Connor'[19D[Kfirstname', 'Sarah'[19D[Kcity', 'Los Angeles'[20D[Kaddress', '1428 Elm Street'[27D[Klastname', 'Krueger'[20D[Kfirstname', 'Fred'[33D[K4', 'customers:customerid', '4'[31D[K3', 'customers:phone', '213-678-4431'[37D[K4', 'customers:customerid', '4'', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6Df', '4'[6Di', '4'[6Dr', '4'[6Ds', '4'[6Dt', '4'[6Dn', '4'[6Da', '4'[6Dm', '4'[6De', '4'[6D[C[C[C[C[C'[KF'r'e'd'[C
+Took 0.0121 seconds                                                                     
+hbase:057:0> put 'ecom', 'row4', 'customers:firstname', 'Fred'', 'Fred'[K[9D', 'Fred'[K[9D', 'Fred'[K[9D', 'Fred'[K[9D', 'Fred'[K[9D', 'Fred'[K[9D', 'Fred'[K[9D', 'Fred'[K[9D', 'Fred'[K[9Dl', 'Fred'[9Da', 'Fred'[9Ds', 'Fred'[9Dt', 'Fred'[9Dn', 'Fred'[9Da', 'Fred'[9Dm', 'Fred'[9De', 'Fred'[9D[C[C[C[C[C[C[C[C[C'[K'[K'[K'[KK'r'u'e'g'e'r'[C
+Took 0.0094 seconds                                                                     
+hbase:058:0> put 'ecom', 'row4', 'customers:lastname', 'Krueger'', 'Krueger'[K[12D', 'Krueger'[K[12D', 'Krueger'[K[12D', 'Krueger'[K[12D', 'Krueger'[K[12D', 'Krueger'[K[12D', 'Krueger'[K[12D', 'Krueger'[K[12Da', 'Krueger'[12Dd', 'Krueger'[12Dd', 'Krueger'[12Dr', 'Krueger'[12De', 'Krueger'[12Ds', 'Krueger'[12Ds', 'Krueger'[12D[C[C[C[Crueger'[K[7Dueger'[K[6Deger'[K[5Dger'[K[4Der'[K[3Dr'[K[2D'[K1'4'2'8' 'E'l'm' 'S't'r'e'e't'[C
+Took 0.0055 seconds                                                                     
+hbase:059:0> put 'ecom', 'row4', 'customers:address', '1428 Elm Street'', '1428 Elm Street'[K[20D', '1428 Elm Street'[K[20D', '1428 Elm Street'[K[20D', '1428 Elm Street'[K[20D', '1428 Elm Street'[K[20D', '1428 Elm Street'[K[20D', '1428 Elm Street'[K[20Dc', '1428 Elm Street'[20Di', '1428 Elm Street'[20Dt', '1428 Elm Street'[20Dy', '1428 Elm Street'[20D[C[C[C[C428 Elm Street'[K[15D28 Elm Street'[K[14D8 Elm Street'[K[13D Elm Street'[K[12DElm Street'[K[11Dlm Street'[K[10Dm Street'[K[9D Street'[K[8DStreet'[K[7Dtreet'[K[6Dreet'[K[5Deet'[K[4Det'[K[3Dt'[K[2D'[KL'o's' 'A'n'g'e'l'e's'[C
+Took 0.0076 seconds                                                                     
+hbase:060:0> put 'ecom', 'row4', 'customers:city', 'Los Angeles'', 'Los Angeles'[K[16D', 'Los Angeles'[K[16D', 'Los Angeles'[K[16D', 'Los Angeles'[K[16Ds', 'Los Angeles'[16Dt', 'Los Angeles'[16Da', 'Los Angeles'[16Dt', 'Los Angeles'[16De', 'Los Angeles'[16D[C[C[C[Cos Angeles'[K[11Ds Angeles'[K[10D Angeles'[K[9DAngeles'[K[8Dngeles'[K[7Dgeles'[K[6Deles'[K[5Dles'[K[4Des'[K[3Ds'[K[2D'[KC'A'[C
+Took 0.0041 seconds                                                                     
+hbase:061:0> put 'ecom', 'row4', 'customers:state', 'CA'', 'CA'[K[7D', 'CA'[K[7D', 'CA'[K[7D', 'CA'[K[7D', 'CA'[K[7Dz', 'CA'[7Di', 'CA'[7Dp', 'CA'[7D[C[C[C[CA'[K[2D'[K9'0'0'0'8'[C
+Took 0.0043 seconds                                                                     
+hbase:062:0> put 'ecom', 'row4', 'customers:zip', '90008''[K'[K'[K'[K'[KU'S'A'', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8Dc', 'USA'[8Do', 'USA'[8Du', 'USA'[8Dn', 'USA'[8Dt', 'USA'[8Dr', 'USA'[8Dy', 'USA'[8D[8C
+Took 0.0035 seconds                                                                     
+hbase:063:0> put 'ecom', 'row4', 'customers:country', 'USA'', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8D', 'USA'[K[8De', 'USA'[8Dm', 'USA'[8Da', 'USA'[8Di', 'USA'[8Dl', 'USA'[8D[C[C[C[C[C[C[C'[K'[K'[Kf'r'e'd'd'y'@'h'o't'm'a'i'l'.'c'o'm'[C
+Took 0.0049 seconds                                                                     
+hbase:064:0> put 'ecom', 'row4', 'customers:email', 'freddy@hotmail.com'', 'freddy@hotmail.com'[K[23D', 'freddy@hotmail.com'[K[23D', 'freddy@hotmail.com'[K[23D', 'freddy@hotmail.com'[K[23D', 'freddy@hotmail.com'[K[23Dp', 'freddy@hotmail.com'[23Dh', 'freddy@hotmail.com'[23Do', 'freddy@hotmail.com'[23Dn', 'freddy@hotmail.com'[23De', 'freddy@hotmail.com'[23D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K'[K2'1'6'-'6'6'6'-'1'3'1'3'[C
+Took 0.0045 seconds                                                                     
+hbase:065:0> put 'ecom', 'row4', 'customers:phone', '216-666-1313'[C', 'customers:phone', '216-666-1313'[K[36D5', 'customers:phone', '216-666-1313'[36D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C', '216-666-1313'[K[17D', '216-666-1313'[K[17D', '216-666-1313'[K[17D', '216-666-1313'[K[17D', '216-666-1313'[K[17Dc', '216-666-1313'[17Du', '216-666-1313'[17Dt', '216-666-1313'[17Do', '216-666-1313'[17Dm', '216-666-1313'[17D', '216-666-1313'[K[17D', '216-666-1313'[K[17D', '216-666-1313'[K[17Ds', '216-666-1313'[17Di', '216-666-1313'[17Do', '216-666-1313'[17D', '216-666-1313'[K[17D', '216-666-1313'[K[17Dt', '216-666-1313'[17Do', '216-666-1313'[17Dm', '216-666-1313'[17De', '216-666-1313'[17Dr', '216-666-1313'[17Di', '216-666-1313'[17Dd', '216-666-1313'[17D[C[C[C[C16-666-1313'[K[12D6-666-1313'[K[11D-666-1313'[K[10D666-1313'[K[9D66-1313'[K[8D6-1313'[K[7D-1313'[K[6D1313'[K[5D313'[K[4D13'[K[3D3'[K[2D'[K5'[C
+Took 0.0046 seconds                                                                     
+hbase:066:0> put 'ecom', 'row5', 'customers:customerid', '5'[C', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6Df', '5'[6Di', '5'[6Dr', '5'[6Ds', '5'[6Dt', '5'[6Dn', '5'[6Da', '5'[6Dm', '5'[6De', '5'[6D[C[C[C[C[C'[KC''[KS'h'e'r'l'o'c'k'[C
+Took 0.0058 seconds                                                                     
+hbase:067:0> put 'ecom', 'row5', 'customers:firstname', 'Sherlock'name', 'Sherlock'[K[17Dname', 'Sherlock'[K[17Dname', 'Sherlock'[K[17Dname', 'Sherlock'[K[17Dname', 'Sherlock'[K[17Dlname', 'Sherlock'[17Daname', 'Sherlock'[17Dsname', 'Sherlock'[17Dtname', 'Sherlock'[17D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K'[K'[KH'o'm''[Kl'o''[Km'e's'[C
+Took 0.0037 seconds                                                                     
+hbase:068:0> put 'ecom', 'row5', 'customers:lastname', 'Holmes'', 'Holmes'[K[11D', 'Holmes'[K[11D', 'Holmes'[K[11D', 'Holmes'[K[11D', 'Holmes'[K[11D', 'Holmes'[K[11D', 'Holmes'[K[11D', 'Holmes'[K[11Da', 'Holmes'[11Dd', 'Holmes'[11Dd', 'Holmes'[11Dr', 'Holmes'[11De', 'Holmes'[11Ds', 'Holmes'[11Ds', 'Holmes'[11D[C[C[C[Colmes'[K[6Dlmes'[K[5Dmes'[K[4Des'[K[3Ds'[K[2D'[K1' 'E'v'e'r'g'r'e'e'n' 'S't'r'e'e't'[C
+Took 0.0055 seconds                                                                     
+hbase:069:0> put 'ecom', 'row5', 'customers:address', '1 Evergreen Street'', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23D', '1 Evergreen Street'[K[23Dc', '1 Evergreen Street'[23Di', '1 Evergreen Street'[23Dt', '1 Evergreen Street'[23Dy', '1 Evergreen Street'[23Dr', '1 Evergreen Street'[23D', '1 Evergreen Street'[K[23D[C[C[C[C Evergreen Street'[K[18DEvergreen Street'[K[17Dvergreen Street'[K[16Dergreen Street'[K[15Drgreen Street'[K[14Dgreen Street'[K[13Dreen Street'[K[12Deen Street'[K[11Den Street'[K[10Dn Street'[K[9D Street'[K[8DStreet'[K[7Dtreet'[K[6Dreet'[K[5Deet'[K[4Det'[K[3Dt'[K[2D'[K2'2'1'B' 'B'a'k'e'r' 'S't'r'[C
+Took 0.0040 seconds                                                                     
+hbase:070:0> put 'ecom', 'row5', 'customers:city', '221B Baker Str'', '221B Baker Str'[K[19D', '221B Baker Str'[K[19D', '221B Baker Str'[K[19D', '221B Baker Str'[K[19Dz', '221B Baker Str'[19Di', '221B Baker Str'[19Dp', '221B Baker Str'[19D[C[C[C[C21B Baker Str'[K[14D1B Baker Str'[K[13DB Baker Str'[K[12D Baker Str'[K[11DBaker Str'[K[10Daker Str'[K[9Dker Str'[K[8Der Str'[K[7Dr Str'[K[6D Str'[K[5DStr'[K[4Dtr'[K[3Dr'[K[2D'[KN'W'1' '6'X'e''[KE'[C
+Took 0.0066 seconds                                                                     
+hbase:071:0> put 'ecom', 'row5', 'customers:zip', 'NW1 6XE'[C[C', 'NW1 6XE'[K[12D', 'NW1 6XE'[K[12D', 'NW1 6XE'[K[12Dc', 'NW1 6XE'[12Do', 'NW1 6XE'[12Du', 'NW1 6XE'[12Dn', 'NW1 6XE'[12Dt', 'NW1 6XE'[12Dr', 'NW1 6XE'[12Dy', 'NW1 6XE'[12D[C[C[C[CW1 6XE'[K[7D1 6XE'[K[6D 6XE'[K[5D6XE'[K[4DXE'[K[3DE'[K[2D'[KU'I''[KK'[C
+Took 0.0043 seconds                                                                     
+hbase:072:0> put 'ecom', 'row5', 'customers:country', 'UK'[C[C', 'UK'[K[7D', 'UK'[K[7D', 'UK'[K[7D', 'UK'[K[7D', 'UK'[K[7D', 'UK'[K[7D', 'UK'[K[7De', 'UK'[7Dm', 'UK'[7Da', 'UK'[7Di', 'UK'[7Dl', 'UK'[7D[C[C[C[CK'[K[2D'[Ks'h'o'm''[Kl'm'e's'@'g'm'a'i'l'.'c'o'm'[C
+Took 0.0038 seconds                                                                     
+hbase:073:0> put 'ecom', 'row5', 'customers:email', 'sholmes@gmail.com'', 'sholmes@gmail.com'[K[22D', 'sholmes@gmail.com'[K[22D', 'sholmes@gmail.com'[K[22D', 'sholmes@gmail.com'[K[22D', 'sholmes@gmail.com'[K[22Dp', 'sholmes@gmail.com'[22Dh', 'sholmes@gmail.com'[22Do', 'sholmes@gmail.com'[22Dn', 'sholmes@gmail.com'[22De', 'sholmes@gmail.com'[22D[C[C[C[Cholmes@gmail.com'[K[17Dolmes@gmail.com'[K[16Dlmes@gmail.com'[K[15Dmes@gmail.com'[K[14Des@gmail.com'[K[13Ds@gmail.com'[K[12D@gmail.com'[K[11Dgmail.com'[K[10Dmail.com'[K[9Dail.com'[K[8Dil.com'[K[7Dl.com'[K[6D.com'[K[5Dcom'[K[4Dom'[K[3Dm'[K[2D'[K+'4'4' '2'0' '7'2'2'4' '3'6'8'8'[C
+Took 0.0045 seconds                                                                     
+hbase:074:0> put 'eom[K[Kcom', 'row 3[K[K3', 'orders:orderid', 'abc'[K456'
+Took 0.0047 seconds                                                                     
+hbase:075:0> put 'ecom', 'row3', 'orders:orderid', 'abc456'', 'abc456'[K[11D', 'abc456'[K[11D', 'abc456'[K[11D', 'abc456'[K[11D', 'abc456'[K[11D', 'abc456'[K[11D', 'abc456'[K[11Dc', 'abc456'[11Du', 'abc456'[11Ds', 'abc456'[11Dt', 'abc456'[11Do', 'abc456'[11Dm', 'abc456'[11De', 'abc456'[11Dr', 'abc456'[11Di', 'abc456'[11Dd', 'abc456'[11D[C[C[C[Cbc456'[K[6Dc456'[K[5D456'[K[4D56'[K[3D6'[K[2D'[K3'[C
+Took 0.0035 seconds                                                                     
+hbase:076:0> put 'ecom', 'row3', 'orders:customerid', '3'[C', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6Do', '3'[6Dr', '3'[6De', '3'[6Dr', '3'[6Di', '3'[6Dd', '3'[6D', '3'[K[6D', '3'[K[6D', '3'[K[6D', '3'[K[6Dd', '3'[6De', '3'[6Dr', '3'[6Dd', '3'[6Da', '3'[6Dt', '3'[6Da', '3'[6D', '3'[K[6De', '3'[6D[C[C[C[C'[K1'9'8'4'-'1'0'-'2'6'[C
+Took 0.0041 seconds                                                                     
+hbase:077:0> put 'ecom', 'row3', 'orders:orderdate', '1984-10-26'[C[C', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15Dd', '1984-10-26'[15Da', '1984-10-26'[15Dt', '1984-10-26'[15De', '1984-10-26'[15Df', '1984-10-26'[15Du', '1984-10-26'[15Dl', '1984-10-26'[15Dl', '1984-10-26'[15Df', '1984-10-26'[15Di', '1984-10-26'[15Dl', '1984-10-26'[15Dl', '1984-10-26'[15De', '1984-10-26'[15Dd', '1984-10-26'[15D[C[C[C[C[C[C[C[C[C[C[C[C[3C
+Took 0.0036 seconds                                                                     
+hbase:078:0> put 'ecom', 'row3', 'orders:datefullfilled', '1984-10-26'', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15D', '1984-10-26'[K[15Dp', '1984-10-26'[15Dr', '1984-10-26'[15Do', '1984-10-26'[15Dd', '1984-10-26'[15Du', '1984-10-26'[15Dc', '1984-10-26'[15Dt', '1984-10-26'[15Ds', '1984-10-26'[15D:', '1984-10-26'[15Dp', '1984-10-26'[15Dr', '1984-10-26'[15Do', '1984-10-26'[15Dc', '1984-10-26'[15D', '1984-10-26'[K[15Dd', '1984-10-26'[15Du', '1984-10-26'[15Dc', '1984-10-26'[15Dt', '1984-10-26'[15Dn', '1984-10-26'[15Da', '1984-10-26'[15Dm', '1984-10-26'[15De', '1984-10-26'[15D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K'[K'[K'[K'[KT'a'n'k' 'T'o'p'[C
+Took 0.0053 seconds                                                                     
+hbase:079:0> put 'ecom', 'row3', 'products:productname', 'Tank Top'', 'Tank Top'[K[13D', 'Tank Top'[K[13D', 'Tank Top'[K[13D', 'Tank Top'[K[13Dd', 'Tank Top'[13De', 'Tank Top'[13Ds', 'Tank Top'[13Dc', 'Tank Top'[13Dr', 'Tank Top'[13Di', 'Tank Top'[13Dp', 'Tank Top'[13Dt', 'Tank Top'[13Di', 'Tank Top'[13Do', 'Tank Top'[13Dn', 'Tank Top'[13D[C[C[C[CTank Top'[K[9Dank Top'[K[8Dnk Top'[K[7Dk Top'[K[6D Top'[K[5DTop'[K[4Dop'[K[3Dp'[K[2D'[K[K'blak tank top, size SM' [A[87Cck tank top, size SM'[A[68C[C
+[C
+Took 0.0055 seconds                                                                     
+hbase:080:0> put 'ecom', 'row1', 'products:pu[K[Kupc_productid', '123455[K67890'
+Took 0.0059 seconds                                                                     
+hbase:081:0> put 'ecom', 'row1', 'products:upc_productid', '1234567890'[C[C', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15Dp', '1234567890'[15Dr', '1234567890'[15Do', '1234567890'[15Dd', '1234567890'[15Du', '1234567890'[15Dc', '1234567890'[15Dt', '1234567890'[15Di', '1234567890'[15Do', '1234567890'[15Do', '1234567890'[15D', '1234567890'[K[15D', '1234567890'[K[15D', '1234567890'[K[15Dn', '1234567890'[15Da', '1234567890'[15Dm', '1234567890'[15De', '1234567890'[15D[C[C[C[C[C234567890'[K[10D34567890'[K[9D4567890'[K[8D567890'[K[7D67890'[K[6D7890'[K[5D890'[K[4D90'[K[3D0'[K[2D'[KC'h'i'c'a'g'o' 'B'u'l'l's' 'r'e'd' 't's'h'i'r't'[C
+Took 0.0037 seconds                                                                     
+hbase:082:0> put 'ecom', 'row1', 'products:productname', 'Chicago Bulls red tshirt'', 'Chicago Bulls red tshirt'[K[29D', 'Chicago Bulls red tshirt'[K[29D', 'Chicago Bulls red tshirt'[K[29D', 'Chicago Bulls red tshirt'[K[29D', 'Chicago Bulls red tshirt'[K[29Dt', 'Chicago Bulls red tshirt'[29Dd', 'Chicago Bulls red tshirt'[29De', 'Chicago Bulls red tshirt'[29Ds', 'Chicago Bulls red tshirt'[29Dc', 'Chicago Bulls red tshirt'[29Dr', 'Chicago Bulls red tshirt'[29Dt', 'Chicago Bulls red tshirt'[29Di', 'Chicago Bulls red tshirt'[29Dp', 'Chicago Bulls red tshirt'[29D', 'Chicago Bulls red tshirt'[K[29D', 'Chicago Bulls red tshirt'[K[29D', 'Chicago Bulls red tshirt'[K[29Di', 'Chicago Bulls red tshirt'[29Dp', 'Chicago Bulls red tshirt'[29Dt', 'Chicago Bulls red tshirt'[29Di', 'Chicago Bulls red tshirt' [A[59Co', 'Chicago Bulls red tshirt'[A[59Cn', 'Chicago Bulls red tshirt'[A[59C[C[C[C[Chicago Bulls red tshirt'[K[A[64Cicago Bulls red tshirt' [K[A[65Ccago Bulls red tshirt'[K[22Dago Bulls red tshirt'[K[21Dgo Bulls red tshirt'[K[20Do Bulls red tshirt'[K[19D Bulls red tshirt'[K[18DBulls red tshirt'[K[17Dulls red tshirt'[K[16Dlls red tshirt'[K[15Dls red tshirt'[K[14Ds red tshirt'[K[13D red tshirt'[K[12Dred tshirt'[K[11Ded tshirt'[K[10Dd tshirt'[K[9D tshirt'[K[8Dtshirt'[K[7Dshirt'[K[6Dhirt'[K[5Dirt'[K[4Drt'[K[3Dt'[K[2D'[Kr'e'd' 't'-'s'h'i'r't',' 's'i'z'e' 'X'L'[C
+Took 0.0049 seconds                                                                     
+hbase:083:0> put 'ecom', 'row1', 'products:productdescription', 'red t-shirt, size XL'', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25D', 'red t-shirt, size XL'[K[25Du', 'red t-shirt, size XL'[25Dn', 'red t-shirt, size XL'[25Di', 'red t-shirt, size XL'[25Dt', 'red t-shirt, size XL'[25Dp', 'red t-shirt, size XL'[25Dr', 'red t-shirt, size XL'[25Di', 'red t-shirt, size XL'[25Dc', 'red t-shirt, size XL'[25De', 'red t-shirt, size XL'[25D[C[C[C[Ced t-shirt, size XL'[K[20Dd t-shirt, size XL'[K[19D t-shirt, size XL'[K[18Dt-shirt, size XL'[K[17D-shirt, size XL'[K[16Dshirt, size XL'[K[15Dhirt, size XL'[K[14Dirt, size XL'[K[13Drt, size XL'[K[12Dt, size XL'[K[11D, size XL'[K[10D size XL'[K[9Dsize XL'[K[8Dize XL'[K[7Dze XL'[K[6De XL'[K[5D XL'[K[4DXL'[K[3DL'[K[2D'[K$'2'9'.'9'9'[C
+Took 0.0054 seconds                                                                     
+hbase:084:0> put 'ecom', 'row2', 'orders:orderid', 'abc789'
+Took 0.0042 seconds                                                                     
+hbase:085:0> put 'ecom', 'reo[2D[Kow2', 'orders:orderid', 'abc789'[C', 'abc789'[K[11D', 'abc789'[K[11D', 'abc789'[K[11D', 'abc789'[K[11D', 'abc789'[K[11D', 'abc789'[K[11D', 'abc789'[K[11Dc', 'abc789'[11Du', 'abc789'[11Ds', 'abc789'[11Dt', 'abc789'[11Do', 'abc789'[11Dm', 'abc789'[11De', 'abc789'[11Dr', 'abc789'[11Di', 'abc789'[11Dd', 'abc789'[11D[C[C[C[Cbc789'[K[6Dc789'[K[5D789'[K[4D89'[K[3D9'[K[2D'[K2'[C
+Took 0.0039 seconds                                                                     
+hbase:086:0> put 'ecom', 'row2', 'orders:customerid', '2'', '2'[K[6D', '2'[K[6D', '2'[K[6D', '2'[K[6D', '2'[K[6D', '2'[K[6D', '2'[K[6D', '2'[K[6D', '2'[K[6D', '2'[K[6Do', '2'[6Dr', '2'[6Dd', '2'[6De', '2'[6Dr', '2'[6Dd', '2'[6Da', '2'[6Dt', '2'[6De', '2'[6D[C[C[C[C[C0'1'9'-'0'5'-'1'2'[C
+Took 0.0046 seconds                                                                     
+hbase:087:0> put 'ecom', 'row2', 'orders:orderdate', '2019-05-12'date', '2019-05-12'[K[19Ddate', '2019-05-12'[K[19Ddate', '2019-05-12'[K[19Ddate', '2019-05-12'[K[19Ddate', '2019-05-12'[K[19D[C[C[C[Cf', '2019-05-12'[15Du', '2019-05-12'[15Dl', '2019-05-12'[15Dl', '2019-05-12'[15Df', '2019-05-12'[15Di', '2019-05-12'[15Dl', '2019-05-12'[15Dl', '2019-05-12'[15De', '2019-05-12'[15Dd', '2019-05-12'[15D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'[K3'[C
+Took 0.0047 seconds                                                                     
+hbase:088:0> put 'ecom', 'row2', 'orders:datefullfilled', '2019-05-13'', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15D', '2019-05-13'[K[15Dp', '2019-05-13'[15Dr', '2019-05-13'[15Do', '2019-05-13'[15Dd', '2019-05-13'[15Du', '2019-05-13'[15Dc', '2019-05-13'[15Dt', '2019-05-13'[15Ds', '2019-05-13'[15D:', '2019-05-13'[15Dp', '2019-05-13'[15Dr', '2019-05-13'[15Do', '2019-05-13'[15Dd', '2019-05-13'[15Du', '2019-05-13'[15Dc', '2019-05-13'[15Dt', '2019-05-13'[15Dn', '2019-05-13'[15Da', '2019-05-13'[15Dm', '2019-05-13'[15De', '2019-05-13'[15D'', '2019-05-13'[15D', '2019-05-13'[K[15D[C[C[C[C019-05-13'[K[10D19-05-13'[K[9D9-05-13'[K[8D-05-13'[K[7D05-13'[K[6D5-13'[K[5D-13'[K[4D13'[K[3D3'[K[2D'[KT'-'S'h'i'r't'[C
+Took 0.0134 seconds                                                                     
+hbase:089:0> put 'ecom', 'row2', 'products:productname', 'T-Shirt'', 'T-Shirt'[K[12D', 'T-Shirt'[K[12D', 'T-Shirt'[K[12D', 'T-Shirt'[K[12Dd', 'T-Shirt'[12De', 'T-Shirt'[12Ds', 'T-Shirt'[12Dc', 'T-Shirt'[12Dr', 'T-Shirt'[12Di', 'T-Shirt'[12Dp', 'T-Shirt'[12Dt', 'T-Shirt'[12Di', 'T-Shirt'[12Do', 'T-Shirt'[12Dn', 'T-Shirt'[12D[C[C[C[C-Shirt'[K[7DShirt'[K[6Dhirt'[K[5Dirt'[K[4Drt'[K[3Dt'[K[2D'[Kr'e'd' 't'-'s'h'i'r't',' 's'i'z'e' 'S'M'[C
+Took 0.0039 seconds                                                                     
+hbase:090:0> put 'ecom', 'row2', 'products:productdescription', 'red t-shirt, size SM'[36D[Kname', 'T-Shirt'[32D[Korders:datefullfilled', '2019-05-13'[29D[Korderdate', '2019-05-12'[24D[Kcustomerid', '2'[16D[Korderid', 'abc789'', 'orders:orderid', 'abc789'[K[29D4', 'orders:orderid', 'abc789'[29D[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K1'3'5'[C
+Took 0.0050 seconds                                                                     
+hbase:091:0> put 'ecom', 'row4', 'orders:orderid', 'abc135'', 'abc135'[K[11D', 'abc135'[K[11D', 'abc135'[K[11D', 'abc135'[K[11D', 'abc135'[K[11D', 'abc135'[K[11D', 'abc135'[K[11Dc', 'abc135'[11Du', 'abc135'[11Ds', 'abc135'[11Dt', 'abc135'[11Do', 'abc135'[11Dm', 'abc135'[11De', 'abc135'[11Dr', 'abc135'[11Di', 'abc135'[11Dd', 'abc135'[11D[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K4'[C
+Took 0.0039 seconds                                                                     
+hbase:092:0> put 'ecom', 'row4', 'orders:customerid', '4'[C', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6D', '4'[K[6Do', '4'[6Dr', '4'[6Dd', '4'[6De', '4'[6Dr', '4'[6Dd', '4'[6Da', '4'[6Dt', '4'[6De', '4'[6D[C[C[C[C[C'[K2'0'0'3'-'0'8'-'1'3'3''[K[C
+Took 0.0046 seconds                                                                     
+hbase:093:0> put 'ecom', 'row4', 'orders:orderdate', '2003-08-13'', '2003-08-13'[K[15D', '2003-08-13'[K[15D', '2003-08-13'[K[15D', '2003-08-13'[K[15D', '2003-08-13'[K[15D', '2003-08-13'[K[15D', '2003-08-13'[K[15D', '2003-08-13'[K[15D', '2003-08-13'[K[15Dp', '2003-08-13'[15Da', '2003-08-13'[15Di', '2003-08-13'[15Dd', '2003-08-13'[15D[C[C[C[C003-08-13'[K[10D03-08-13'[K[9D3-08-13'[K[8D-08-13'[K[7D08-13'[K[6D8-13'[K[5D-13'[K[4D13'[K[3D3'[K[2D'[KN'[C
+Took 0.0038 seconds                                                                     
+hbase:094:0> put 'ecom', 'row4', 'orders:paid', 'N'', 'N'[K[6D', 'N'[K[6D', 'N'[K[6D', 'N'[K[6Dp', 'N'[6Dr', 'N'[6Do', 'N'[6Dd', 'N'[6Du', 'N'[6Dc', 'N'[6Dt', 'N'[6Dn', 'N'[6Da', 'N'[6Dm', 'N'[6De', 'N'[6D[C[C[C[C[C'[KT'-'S'h'i'r't'[C
+Took 0.0070 seconds                                                                     
+hbase:095:0> put 'ecom', 'row4', 'orders:productname', 'T-Shirt':productname', 'T-Shirt'[K[24D:productname', 'T-Shirt'[K[24D:productname', 'T-Shirt'[K[24D:productname', 'T-Shirt'[K[24D:productname', 'T-Shirt'[K[24D:productname', 'T-Shirt'[K[24Dp:productname', 'T-Shirt'[24Dr:productname', 'T-Shirt'[24Do:productname', 'T-Shirt'[24Dd:productname', 'T-Shirt'[24Du:productname', 'T-Shirt'[24Dc:productname', 'T-Shirt'[24Dt:productname', 'T-Shirt'[24Ds:productname', 'T-Shirt'[24D[24C
+Took 0.0042 seconds                                                                     
+hbase:096:0> put 'ecom', 'row4', 'products:productname', 'T-Shirt'', 'T-Shirt'[K[12D', 'T-Shirt'[K[12D', 'T-Shirt'[K[12D', 'T-Shirt'[K[12Dd', 'T-Shirt'[12De', 'T-Shirt'[12Ds', 'T-Shirt'[12Dc', 'T-Shirt'[12Dr', 'T-Shirt'[12Di', 'T-Shirt'[12Dp', 'T-Shirt'[12Dt', 'T-Shirt'[12Di', 'T-Shirt'[12Do', 'T-Shirt'[12Dn', 'T-Shirt'[12D[C[C[C[C[C[C[C[C[C[C[C'[K'[K'[K'[K'[K'[K'[Kr'e'd'/'g'r'e'e'n' 's't'r'i'p'e'd' 't'-'s'h' [A[87Ci'r't',' 's'i'z'e' 'L'G'[C
+Took 0.0034 seconds                                                                     
+hbase:097:0> put 'ecom', 'row5', 'orders:orderid'[K', 'abc246'
+Took 0.0043 seconds                                                                     
+hbase:098:0> put 'ecom', 'row5', 'orders:orderid', 'abc246'', 'abc246'[K[11D', 'abc246'[K[11D', 'abc246'[K[11D', 'abc246'[K[11D', 'abc246'[K[11D', 'abc246'[K[11D', 'abc246'[K[11Dc', 'abc246'[11Du', 'abc246'[11Ds', 'abc246'[11Dt', 'abc246'[11Do', 'abc246'[11Dm', 'abc246'[11De', 'abc246'[11Dr', 'abc246'[11Di', 'abc246'[11Dd', 'abc246'[11D[C[C[C[Cbc246'[K[6Dc246'[K[5D246'[K[4D46'[K[3D6'[K[2D'[K5'[C
+Took 0.0137 seconds                                                                     
+hbase:099:0> put 'ecom', 'row5', 'orders:customerid', '5'', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6D', '5'[K[6Do', '5'[6Dr', '5'[6Dd', '5'[6De', '5'[6Dr', '5'[6Dd', '5'[6Da', '5'[6Dt', '5'[6De', '5'[6D[C[C[C[C'[K2'0'0'9'-'1'2'-'2'5'[C
+Took 0.0037 seconds                                                                     
+hbase:100:0> put 'ecom', 'row5', 'orders:orderdate', '2009-12-25'date', '2009-12-25'[K[19Ddate', '2009-12-25'[K[19Ddate', '2009-12-25'[K[19Ddate', '2009-12-25'[K[19Ddate', '2009-12-25'[K[19Dpdate', '2009-12-25'[19Dydate', '2009-12-25'[19Ddate', '2009-12-25'[K[19Dadate', '2009-12-25'[19Dydate', '2009-12-25'[19Dmdate', '2009-12-25'[19Dedate', '2009-12-25'[19Dndate', '2009-12-25'[19Dtdate', '2009-12-25'[19D[19C
+Took 0.0046 seconds                                                                     
+hbase:101:0> put 'ecom', 'row5', 'orders:paymentdate', '2009-12-25'', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15D', '2009-12-25'[K[15Dp', '2009-12-25'[15Dr', '2009-12-25'[15Do', '2009-12-25'[15Dd', '2009-12-25'[15Du', '2009-12-25'[15Dc', '2009-12-25'[15Dt', '2009-12-25'[15Ds', '2009-12-25'[15D:', '2009-12-25'[15Dp', '2009-12-25'[15Dr', '2009-12-25'[15Do', '2009-12-25'[15Dd', '2009-12-25'[15Du', '2009-12-25'[15Dc', '2009-12-25'[15Dt', '2009-12-25'[15Dn', '2009-12-25'[15Da', '2009-12-25'[15Dm', '2009-12-25'[15De', '2009-12-25'[15D[C[C[C[C009-12-25'[K[10D09-12-25'[K[9D9-12-25'[K[8D-12-25'[K[7D12-25'[K[6D2-25'[K[5D-25'[K[4D25'[K[3D5'[K[2D'[KT'-'S'h'i'r't'[C
+Took 0.0040 seconds                                                                     
+hbase:102:0> put 'ecom', 'row5', 'products:productname', 'T-Shirt'[C', 'T-Shirt'[K[12D', 'T-Shirt'[K[12D', 'T-Shirt'[K[12D', 'T-Shirt'[K[12D', 'T-Shirt'[K[12Dt', 'T-Shirt'[12Dd', 'T-Shirt'[12De', 'T-Shirt'[12Ds', 'T-Shirt'[12Dr', 'T-Shirt'[12Di', 'T-Shirt'[12Dp', 'T-Shirt'[12Dt', 'T-Shirt'[12Di', 'T-Shirt'[12Do', 'T-Shirt'[12Dn', 'T-Shirt'[12D[C[C[C[C-Shirt'[K[7DShirt'[K[6Dhirt'[K[5Dirt'[K[4Drt'[K[3Dt'[K[2D'[Kw'h'i't'e' 'T''[Kt'-'s'h'i'r't' ''[K ''[K,' 's'i'z'e' 'M'E'D' [A[87C[Ccription', 'white t-shirt, size MED'[A[53C
+[C
+Took 0.0051 seconds                                                                     
+hbase:103:0> get 'ecom' [K, 'row1', 'customers'
+COLUMN                  CELL                                                            
+ customers:address      timestamp=2024-01-15T14:19:35.049, value=1901 West Madison Stree
+                        t                                                               
+ customers:city         timestamp=2024-01-15T14:19:53.513, value=Chicago                
+ customers:country      timestamp=2024-01-15T14:20:54.877, value=USA                    
+ customers:customerid   timestamp=2024-01-15T14:22:44.489, value=1                      
+ customers:email        timestamp=2024-01-15T14:21:42.500, value=mjordan@bulls.com      
+ customers:firstname    timestamp=2024-01-15T14:17:11.759, value=Michael                
+ customers:lastname     timestamp=2024-01-15T14:19:08.538, value=Jordan                 
+ customers:orderdate    timestamp=2024-01-15T14:23:49.371, value=2019-04-14             
+ customers:orderid      timestamp=2024-01-15T14:22:30.956, value=abc123                 
+ customers:phone        timestamp=2024-01-15T14:22:06.682, value=312-455-4000           
+ customers:productdescr timestamp=2024-01-15T14:25:06.345, value=red t-shirt, size XL   
+ iption                                                                                 
+ customers:productname  timestamp=2024-01-15T14:24:39.149, value=Chicago Bulls red tshir
+                        t                                                               
+ customers:state        timestamp=2024-01-15T14:20:08.720, value=IL                     
+ customers:unitprice    timestamp=2024-01-15T14:25:38.188, value=$29.99                 
+ customers:upc_producti timestamp=2024-01-15T14:24:17.333, value=1234567890             
+ d                                                                                      
+ customers:zip          timestamp=2024-01-15T14:20:31.999, value=60612                  
+1 row(s)
+Took 0.2132 seconds                                                                     
+hbase:104:0> scan ecom'[K[K[K[K[K'ecom', { COLUMNS[C{ COLUMNS[K[9D { COLUMNS[9D[C[C[C[C[C[C[C[C[C => 'orders:paid', FILTER=>"BV[K[KValueFilter(=, 'binarypre fix:N')" }
+ROW                     COLUMN+CELL                                                     
+ row4                   column=orders:paid, timestamp=2024-01-15T14:48:04.833, value=N  
+1 row(s)
+Took 0.1224 seconds                                                                     
+hbase:105:0> scan 'ecom', { COLUMNS => 'orders:paid', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[87C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" } [K[A[41C', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[K[47Dc', FILTER=>"ValueFilter(=, 'binaryprefix:N')" } [A[41Cu', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Cs', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Ct', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Co', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Cm', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Ce', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Cr', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Cs', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41C:', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Cc', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Ci', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Ct', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41Cy', FILTER=>"ValueFilter(=, 'binaryprefix:N')" }[A[41C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C')" }[K[5DL')" }[5Do')" }[5Ds')" }[5D ')" }[5DA')" }[5Dn')" }[5Dg')" }[5De')" }[5Dl')" }[5De')" }[5Ds')" }[5D[5C
+ROW                     COLUMN+CELL                                                     
+ row3                   column=customers:city, timestamp=2024-01-15T14:33:59.484, value=
+                        Los Angeles                                                     
+ row4                   column=customers:city, timestamp=2024-01-15T14:35:57.225, value=
+                        Los Angeles                                                     
+2 row(s)
+Took 0.0095 seconds                                                                     
+hbase:106:0> scan 'ecom'
+ROW                     COLUMN+CELL                                                     
+ row1                   column=customers:address, timestamp=2024-01-15T14:19:35.049, val
+                        ue=1901 West Madison Street                                     
+ row1                   column=customers:city, timestamp=2024-01-15T14:19:53.513, value=
+                        Chicago                                                         
+ row1                   column=customers:country, timestamp=2024-01-15T14:20:54.877, val
+                        ue=USA                                                          
+ row1                   column=customers:customerid, timestamp=2024-01-15T14:22:44.489, 
+                        value=1                                                         
+ row1                   column=customers:email, timestamp=2024-01-15T14:21:42.500, value
+                        =mjordan@bulls.com                                              
+ row1                   column=customers:firstname, timestamp=2024-01-15T14:17:11.759, v
+                        alue=Michael                                                    
+ row1                   column=customers:lastname, timestamp=2024-01-15T14:19:08.538, va
+                        lue=Jordan                                                      
+ row1                   column=customers:orderdate, timestamp=2024-01-15T14:23:49.371, v
+                        alue=2019-04-14                                                 
+ row1                   column=customers:orderid, timestamp=2024-01-15T14:22:30.956, val
+                        ue=abc123                                                       
+ row1                   column=customers:phone, timestamp=2024-01-15T14:22:06.682, value
+                        =312-455-4000                                                   
+ row1                   column=customers:productdescription, timestamp=2024-01-15T14:25:
+                        06.345, value=red t-shirt, size XL                              
+ row1                   column=customers:productname, timestamp=2024-01-15T14:24:39.149,
+                         value=Chicago Bulls red tshirt                                 
+ row1                   column=customers:state, timestamp=2024-01-15T14:20:08.720, value
+                        =IL                                                             
+ row1                   column=customers:unitprice, timestamp=2024-01-15T14:25:38.188, v
+                        alue=$29.99                                                     
+ row1                   column=customers:upc_productid, timestamp=2024-01-15T14:24:17.33
+                        3, value=1234567890                                             
+ row1                   column=customers:zip, timestamp=2024-01-15T14:20:31.999, value=6
+                        0612                                                            
+ row1                   column=orders:completed, timestamp=2024-01-15T14:26:30.947, valu
+                        e=Y                                                             
+ row1                   column=orders:discount, timestamp=2024-01-15T14:26:08.688, value
+                        =$4                                                             
+ row1                   column=orders:quantity, timestamp=2024-01-15T14:25:54.830, value
+                        =4                                                              
+ row1                   column=products:productdescription, timestamp=2024-01-15T14:44:1
+                        3.935, value=red t-shirt, size XL                               
+ row1                   column=products:productname, timestamp=2024-01-15T14:43:48.514, 
+                        value=Chicago Bulls red tshirt                                  
+ row1                   column=products:unitprice, timestamp=2024-01-15T14:44:31.176, va
+                        lue=$29.99                                                      
+ row1                   column=products:upc_productid, timestamp=2024-01-15T14:43:27.460
+                        , value=1234567890                                              
+ row2                   column=customers:address, timestamp=2024-01-15T14:28:17.257, val
+                        ue=1 Evergreen Street                                           
+ row2                   column=customers:city, timestamp=2024-01-15T14:28:34.889, value=
+                        Springfield                                                     
+ row2                   column=customers:country, timestamp=2024-01-15T14:29:03.710, val
+                        ue=USA                                                          
+ row2                   column=customers:customerid, timestamp=2024-01-15T14:27:09.749, 
+                        value=2                                                         
+ row2                   column=customers:email, timestamp=2024-01-15T14:29:34.045, value
+                        =bart_simpson@yahoo.com                                         
+ row2                   column=customers:firstname, timestamp=2024-01-15T14:27:27.252, v
+                        alue=Bart                                                       
+ row2                   column=customers:lastname, timestamp=2024-01-15T14:27:58.373, va
+                        lue=Simpson                                                     
+ row2                   column=customers:phone, timestamp=2024-01-15T14:29:53.960, value
+                        =541-789-6532                                                   
+ row2                   column=customers:state, timestamp=2024-01-15T14:28:44.589, value
+                        =OR                                                             
+ row2                   column=customers:zip, timestamp=2024-01-15T14:28:56.708, value=9
+                        7403                                                            
+ row2                   column=orders:customerid, timestamp=2024-01-15T14:45:17.686, val
+                        ue=2                                                            
+ row2                   column=orders:datefullfilled, timestamp=2024-01-15T14:45:43.992,
+                         value=2019-05-13                                               
+ row2                   column=orders:orderdate, timestamp=2024-01-15T14:45:31.893, valu
+                        e=2019-05-12                                                    
+ row2                   column=orders:orderid, timestamp=2024-01-15T14:45:01.525, value=
+                        abc789                                                          
+ row2                   column=products:productdescription, timestamp=2024-01-15T14:46:2
+                        9.201, value=red t-shirt, size SM                               
+ row2                   column=products:productname, timestamp=2024-01-15T14:46:11.207, 
+                        value=T-Shirt                                                   
+ row3                   column=customers:address, timestamp=2024-01-15T14:34:57.015, val
+                        ue=309 Caldera Canyon                                           
+ row3                   column=customers:apt, timestamp=2024-01-15T14:31:13.119, value=A
+                        pt 225                                                          
+ row3                   column=customers:city, timestamp=2024-01-15T14:33:59.484, value=
+                        Los Angeles                                                     
+ row3                   column=customers:country, timestamp=2024-01-15T14:32:07.047, val
+                        ue=USA                                                          
+ row3                   column=customers:customerid, timestamp=2024-01-15T14:30:18.575, 
+                        value=3                                                         
+ row3                   column=customers:email, timestamp=2024-01-15T14:32:20.609, value
+                        =sconnor@hotmail.com                                            
+ row3                   column=customers:firstname, timestamp=2024-01-15T14:34:31.022, v
+                        alue=Sarah                                                      
+ row3                   column=customers:lastname, timestamp=2024-01-15T14:34:45.710, va
+                        lue=Connor                                                      
+ row3                   column=customers:phone, timestamp=2024-01-15T14:32:39.707, value
+                        =213-678-4431                                                   
+ row3                   column=customers:state, timestamp=2024-01-15T14:31:47.800, value
+                        =CA                                                             
+ row3                   column=customers:zip, timestamp=2024-01-15T14:31:58.679, value=9
+                        0007                                                            
+ row3                   column=orders:customerid, timestamp=2024-01-15T14:40:30.513, val
+                        ue=3                                                            
+ row3                   column=orders:datefullfilled, timestamp=2024-01-15T14:41:22.411,
+                         value=1984-10-26                                               
+ row3                   column=orders:orderdate, timestamp=2024-01-15T14:40:59.851, valu
+                        e=1984-10-26                                                    
+ row3                   column=orders:orderid, timestamp=2024-01-15T14:40:19.286, value=
+                        abc456                                                          
+ row3                   column=products:productdescription, timestamp=2024-01-15T14:42:5
+                        8.088, value=black tank top, size SM                            
+ row3                   column=products:productname, timestamp=2024-01-15T14:42:32.881, 
+                        value=Tank Top                                                  
+ row4                   column=customers:address, timestamp=2024-01-15T14:35:44.189, val
+                        ue=1428 Elm Street                                              
+ row4                   column=customers:city, timestamp=2024-01-15T14:35:57.225, value=
+                        Los Angeles                                                     
+ row4                   column=customers:country, timestamp=2024-01-15T14:36:26.806, val
+                        ue=USA                                                          
+ row4                   column=customers:customerid, timestamp=2024-01-15T14:33:10.469, 
+                        value=4                                                         
+ row4                   column=customers:email, timestamp=2024-01-15T14:36:40.985, value
+                        =freddy@hotmail.com                                             
+ row4                   column=customers:firstname, timestamp=2024-01-15T14:35:19.161, v
+                        alue=Fred                                                       
+ row4                   column=customers:lastname, timestamp=2024-01-15T14:35:30.989, va
+                        lue=Krueger                                                     
+ row4                   column=customers:phone, timestamp=2024-01-15T14:37:00.636, value
+                        =216-666-1313                                                   
+ row4                   column=customers:state, timestamp=2024-01-15T14:36:06.646, value
+                        =CA                                                             
+ row4                   column=customers:zip, timestamp=2024-01-15T14:36:15.363, value=9
+                        0008                                                            
+ row4                   column=orders:customerid, timestamp=2024-01-15T14:47:07.611, val
+                        ue=4                                                            
+ row4                   column=orders:orderdate, timestamp=2024-01-15T14:47:53.802, valu
+                        e=2003-08-13                                                    
+ row4                   column=orders:orderid, timestamp=2024-01-15T14:46:56.174, value=
+                        abc135                                                          
+ row4                   column=orders:paid, timestamp=2024-01-15T14:48:04.833, value=N  
+ row4                   column=orders:productname, timestamp=2024-01-15T14:48:17.333, va
+                        lue=T-Shirt                                                     
+ row4                   column=products:productdescription, timestamp=2024-01-15T14:48:4
+                        6.181, value=red/green striped t-shirt, size LG                 
+ row4                   column=products:productname, timestamp=2024-01-15T14:48:25.847, 
+                        value=T-Shirt                                                   
+ row5                   column=customers:address, timestamp=2024-01-15T14:38:24.245, val
+                        ue=1 Evergreen Street                                           
+ row5                   column=customers:city, timestamp=2024-01-15T14:38:41.338, value=
+                        221B Baker Str                                                  
+ row5                   column=customers:country, timestamp=2024-01-15T14:39:07.233, val
+                        ue=UK                                                           
+ row5                   column=customers:customerid, timestamp=2024-01-15T14:37:43.227, 
+                        value=5                                                         
+ row5                   column=customers:email, timestamp=2024-01-15T14:39:21.714, value
+                        =sholmes@gmail.com                                              
+ row5                   column=customers:firstname, timestamp=2024-01-15T14:37:53.697, v
+                        alue=Sherlock                                                   
+ row5                   column=customers:lastname, timestamp=2024-01-15T14:38:05.939, va
+                        lue=Holmes                                                      
+ row5                   column=customers:phone, timestamp=2024-01-15T14:39:43.956, value
+                        =+44 20 7224 3688                                               
+ row5                   column=customers:zip, timestamp=2024-01-15T14:38:57.822, value=N
+                        W1 6XE                                                          
+ row5                   column=orders:customerid, timestamp=2024-01-15T14:49:20.643, val
+                        ue=5                                                            
+ row5                   column=orders:orderdate, timestamp=2024-01-15T14:49:33.678, valu
+                        e=2009-12-25                                                    
+ row5                   column=orders:orderid, timestamp=2024-01-15T14:49:11.150, value=
+                        abc246                                                          
+ row5                   column=orders:paymentdate, timestamp=2024-01-15T14:49:44.427, va
+                        lue=2009-12-25                                                  
+ row5                   column=products:productdescription, timestamp=2024-01-15T14:50:3
+                        8.180, value=white t-shirt, size MED                            
+ row5                   column=products:productname, timestamp=2024-01-15T14:50:06.346, 
+                        value=T-Shirt                                                   
+5 row(s)
+Took 0.0998 seconds                                                                     
+hbase:107:0> describe 'ecom'
+Table ecom is ENABLED                                                                   
+ecom                                                                                    
+COLUMN FAMILIES DESCRIPTION                                                             
+{NAME => 'customers', BLOOMFILTER => 'ROW', IN_MEMORY => 'false', VERSIONS => '1', KEEP_
+DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', COMPRESSION => 'NONE', TTL => '
+FOREVER', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_S
+COPE => '0'}                                                                            
+
+{NAME => 'order_details', BLOOMFILTER => 'ROW', IN_MEMORY => 'false', VERSIONS => '1', K
+EEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', COMPRESSION => 'NONE', TTL 
+=> 'FOREVER', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATI
+ON_SCOPE => '0'}                                                                        
+
+{NAME => 'orders', BLOOMFILTER => 'ROW', IN_MEMORY => 'false', VERSIONS => '1', KEEP_DEL
+ETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', COMPRESSION => 'NONE', TTL => 'FOR
+EVER', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SCOP
+E => '0'}                                                                               
+
+{NAME => 'products', BLOOMFILTER => 'ROW', IN_MEMORY => 'false', VERSIONS => '1', KEEP_D
+ELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', COMPRESSION => 'NONE', TTL => 'F
+OREVER', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '65536', REPLICATION_SC
+OPE => '0'}                                                                             
+
+4 row(s)
+Quota is disabled
+Took 0.0895 seconds                                                                     
+hbase:108:0> count 'ecom'
+5 row(s)
+Took 0.0189 seconds                                                                     
+=> 5
+hbase:109:0> exit 
+]0;codio@tigerpeople-henrypablo: ~/workspacecodio@tigerpeople-henrypablo:~/workspace$ exit
+exit
+
+Script done on 2024-01-15 14:54:01-0500

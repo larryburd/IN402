@@ -1,0 +1,172 @@
+Unit 4 Assignment / Module 3 Part 2 Competency Assessment Output
+
+12/03/2023 07:34:28 
+
+### Data Head ###
+   RowNumber  CustomerId   Surname  ...  IsActiveMember EstimatedSalary Exited
+0          1    15634602  Hargrave  ...               1       101348.88      1
+1          2    15647311      Hill  ...               1       112542.58      0
+2          3    15619304      Onio  ...               0       113931.57      1
+3          4    15701354      Boni  ...               0        93826.63      0
+4          5    15737888  Mitchell  ...               1        79084.10      0
+5          6    15574012       Chu  ...               0       149756.71      1
+6          7    15592531  Bartlett  ...               1        10062.80      0
+7          8    15656148    Obinna  ...               0       119346.88      1
+8          9    15792365        He  ...               1        74940.50      0
+9         10    15592389        H?  ...               1        71725.73      0
+
+[10 rows x 14 columns]
+
+### Data Tail ###
+      RowNumber  CustomerId  ... EstimatedSalary  Exited
+9990       9991    15798964  ...        53667.08       0
+9991       9992    15769959  ...        69384.71       1
+9992       9993    15657105  ...       195192.40       0
+9993       9994    15569266  ...        29179.52       0
+9994       9995    15719294  ...       167773.55       0
+9995       9996    15606229  ...        96270.64       0
+9996       9997    15569892  ...       101699.77       0
+9997       9998    15584532  ...        42085.58       1
+9998       9999    15682355  ...        92888.52       1
+9999      10000    15628319  ...        38190.78       0
+
+[10 rows x 14 columns]
+
+### Number of Null Values in Each Column ###
+RowNumber          0
+CustomerId         0
+Surname            0
+CreditScore        0
+Geography          0
+Gender             0
+Age                0
+Tenure             0
+Balance            0
+NumOfProducts      0
+HasCrCard          0
+IsActiveMember     0
+EstimatedSalary    0
+Exited             0
+dtype: int64
+
+### Data Structure ###
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 10000 entries, 0 to 9999
+Data columns (total 14 columns):
+ #   Column           Non-Null Count  Dtype  
+---  ------           --------------  -----  
+ 0   RowNumber        10000 non-null  int64  
+ 1   CustomerId       10000 non-null  int64  
+ 2   Surname          10000 non-null  object 
+ 3   CreditScore      10000 non-null  int64  
+ 4   Geography        10000 non-null  object 
+ 5   Gender           10000 non-null  object 
+ 6   Age              10000 non-null  int64  
+ 7   Tenure           10000 non-null  int64  
+ 8   Balance          10000 non-null  float64
+ 9   NumOfProducts    10000 non-null  int64  
+ 10  HasCrCard        10000 non-null  int64  
+ 11  IsActiveMember   10000 non-null  int64  
+ 12  EstimatedSalary  10000 non-null  float64
+ 13  Exited           10000 non-null  int64  
+dtypes: float64(2), int64(9), object(3)
+memory usage: 1.1+ MB
+None
+
+### Data Description ###
+         RowNumber    CustomerId  ...  EstimatedSalary        Exited
+count  10000.00000  1.000000e+04  ...     10000.000000  10000.000000
+mean    5000.50000  1.569094e+07  ...    100090.239881      0.203700
+std     2886.89568  7.193619e+04  ...     57510.492818      0.402769
+min        1.00000  1.556570e+07  ...        11.580000      0.000000
+25%     2500.75000  1.562853e+07  ...     51002.110000      0.000000
+50%     5000.50000  1.569074e+07  ...    100193.915000      0.000000
+75%     7500.25000  1.575323e+07  ...    149388.247500      0.000000
+max    10000.00000  1.581569e+07  ...    199992.480000      1.000000
+
+[8 rows x 11 columns]
+
+### First 5 Rows of X and Y ###
+[['France' 42 101348.88]
+ ['Spain' 41 112542.58]
+ ['France' 42 113931.57]
+ ['France' 39 93826.63]
+ ['Spain' 43 79084.1]]
+[1 0 1 0 0]
+### Copy of X ###
+[['France' 42 101348.88]
+ ['Spain' 41 112542.58]
+ ['France' 42 113931.57]
+ ...
+ ['France' 36 42085.58]
+ ['Germany' 42 92888.52]
+ ['France' 28 38190.78]]
+
+### First 10 Rows of X Copy After Transformation ###
+[[1.0 0.0 0.0 42 101348.88]
+ [0.0 0.0 1.0 41 112542.58]
+ [1.0 0.0 0.0 42 113931.57]
+ [1.0 0.0 0.0 39 93826.63]
+ [0.0 0.0 1.0 43 79084.1]
+ [0.0 0.0 1.0 44 149756.71]
+ [1.0 0.0 0.0 50 10062.8]
+ [0.0 1.0 0.0 29 119346.88]
+ [1.0 0.0 0.0 44 74940.5]
+ [1.0 0.0 0.0 27 71725.73]]
+
+### Y after Label Encoding ###
+[1 0 1 ... 1 1 0]
+
+### X Train ###
+7000
+
+### X Test ###
+3000
+
+Variance of CreditScore is 9341.860156575658 
+
+Variance of Age is 109.99408416841685 
+
+Variance of Tenure is 8.364672627262726 
+
+Variance of Balance is 3893436175.990742 
+
+Variance of EstimatedSalary is 3307456784.134512 
+
+### X Train After Transformation ###
+[[1.0 0.0 0.0 -0.18527928339653538 -1.3768671286602732]
+ [1.0 0.0 0.0 0.005323256654276214 -1.3123385709418818]
+ [1.0 0.0 0.0 -0.18527928339653538 -0.3188434876153574]
+ ...
+ [1.0 0.0 0.0 0.577130876806711 -0.1404845747229453]
+ [1.0 0.0 0.0 0.005323256654276214 0.018567238358042602]
+ [0.0 1.0 0.0 0.29122706673049364 -1.1594776478647715]]
+
+### Log Reg Prediction Length ###
+3000
+### Log Reg Prediction ###
+Predicted Churn:  114
+Predicted Stay:  2886
+
+### Log Reg Confusion Matrix ###
+[[2311   62]
+ [ 575   52]]
+
+### Log Reg Accuracy Score ###
+0.7876666666666666
+
+accuracy:  0.81
+
+precision:  0.696551724137931
+
+recall 0.16108452950558214
+
+              precision    recall  f1-score   support
+
+           0       0.82      0.98      0.89      2373
+           1       0.70      0.16      0.26       627
+
+    accuracy                           0.81      3000
+   macro avg       0.76      0.57      0.58      3000
+weighted avg       0.79      0.81      0.76      3000
+
